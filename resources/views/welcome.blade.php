@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Rent the Nursery</title>
+        <title>everything but the baby</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
@@ -14,7 +14,7 @@
             html, body {
                 /* background-color: #fff; */
                 background-image: url("https://images.pexels.com/photos/160515/child-look-innocence-childhood-160515.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-                background-size: contain;
+                background-size: cover;
                 color: #ffffff;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
@@ -88,9 +88,9 @@
 
                 <div class="links">
                     <a href="/about">About</a>
-                    <a href="/membership/login">Login</a>
-                    <a href="/membership/join">Join</a>
+                    <a href="/membership/register">Login/Register</a>
                     <a href="/products">Shop</a>
+                    <a href="#">Hold</a>
                     <a href="#">Consign</a>
                 </div>
             </div>

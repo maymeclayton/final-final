@@ -1,2 +1,12 @@
+@extends('layout')
 
-<h1 class="mt-5">User information goes here:</h1>
+@section('title')
+  User Profile
+@endsection
+
+
+@section ('content')
+
+
+
+@endsection

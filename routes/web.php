@@ -19,12 +19,12 @@ Route::get('/about', function(){
     return view('about');
 });
 
-Route::get('/membership/login', function(){
-    return view('membership.login');
+Route::get('/cart', function(){
+    return view('cart');
 });
 
-Route::get('/membership/join', function(){
-    return view('membership.join');
+Route::get('/membership/register', function(){
+    return view('membership.register');
 });
 
 Route::get('/products', function(){
