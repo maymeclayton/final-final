@@ -39,7 +39,7 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="/products">Rent</a>
-              <a class="dropdown-item" href="#">Consign</a>
+              <a class="dropdown-item" href="/products/consign">Consign</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="#">Something else here</a>
             </div>
@@ -51,13 +51,12 @@
         </form>
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link text-info" href="cart"><i class="fas fa-shopping-cart"></i><span class="sr-only">(current)</span></a>
+            <a class="nav-link text-info" href="/cart"><i class="fas fa-shopping-cart"></i><span class="sr-only">(current)</span></a>
           </li>
         </ul>
       </div>
     </nav>
 
-    <h1 class="mt-5">@yield('title')</h1>
 
 
     @yield('content')

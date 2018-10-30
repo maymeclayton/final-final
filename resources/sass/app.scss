@@ -54,19 +54,6 @@ $light:         $gray-200;
 $dark:          $gray-800;
 
 
-
-
-// Bootstrap
-@import '~bootstrap/scss/bootstrap';
-
-// body {
-//   background-image: url(https://image.freepik.com/free-photo/horizon-blanket-checkered-retro-nobody_1258-131.jpg);
-// }
-img {
-    max-width: 100%;
-    height: auto;
-}
-
 .navbar-laravel {
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
@@ -79,3 +66,21 @@ img {
 .nav-item {
   font-size: 18px;
 }
+
+.img-thumbnail {
+  height: 50px;
+  width: 50px;
+  object-fit: contain;
+}
+
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// body {
+//   background-image: url(https://image.freepik.com/free-photo/horizon-blanket-checkered-retro-nobody_1258-131.jpg);
+// }
+// img {
+//     max-width: 100%;
+//     height: auto;
+// }

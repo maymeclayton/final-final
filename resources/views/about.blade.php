@@ -7,6 +7,8 @@
 
 @section ('content')
 
+  <h1 class="mt-5">About Us</h5>
+
   <p class="mt-3"> Waa Waa wawa Gaagaa gaa doo ga gaga. Laa goo gaga da dada. Gaga da laalaa laalaa gaga ga huggle gaagaa laa gaagaa ya. Caca laa da googoo da dada laa y. Goo gaga gaa dada goo gaga gaa doo.
 
    Doo doo yaya goo googoo ga da googoo da. Laa gaagaa gaga poppet wawa da gaagaa doodoo da laa. Gaagaa gaa doo ga gaga. Doo gaagaa dada gaa ickle botty po.

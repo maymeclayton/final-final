@@ -7,6 +7,8 @@
 
 @section ('content')
 
+<h2 class="container mt-5 mb-5">Check out all your cool finds!</h2>
+
 <!-- This cart will be completed when someone selects rent. -->
 <table class="table table-striped">
   <thead>

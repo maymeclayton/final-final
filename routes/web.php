@@ -35,6 +35,10 @@ Route::get('/products/details', function(){
     return view('products.details');
 });
 
+route::get('/products/consign', function(){
+    return view('products.consign');
+});
+
 Route::get('membership/user', function(){
   return view('membership.user');
 

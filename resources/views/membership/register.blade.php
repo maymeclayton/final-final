@@ -6,16 +6,16 @@
   Login/Register
 @endsection
 
-
 @section ('content')
 
-<div class="container bg-gray-200 ">
+<div class="container bg-gray-200 mt-5">
   <div class="row">
     <div class="col">
       <div class="card">
         <div class="card-body">
+          <h5 class="card-title font-weight-bold">Returning Members: Log In Here</h5>
           <form>
-            <div class="form-group mt-3">
+            <div class="form-group mt-5">
               <label for="exampleInputEmail1">Email address</label>
               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
               <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
@@ -36,8 +36,9 @@
     <div class="col">
       <div class="card">
         <div class="card-body">
+          <h5 class="card-title font-weight-bold">New here? Create an account here!</h5>
       <form>
-        <div class="form-row mt-3">
+        <div class="form-row mt-5">
           <div class="form-group col-md-6">
             <label for="inputEmail4">Email</label>
             <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
