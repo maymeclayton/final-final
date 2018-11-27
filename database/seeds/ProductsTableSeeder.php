@@ -22,6 +22,7 @@ class ProductsTableSeeder extends Seeder
         $p1->product_brand = 'Fisher-Price';
         $p1->product_price = 5;
         // $p1->rented= false;
+        //$p1->rented_by =  ;
         $p1->save();
 
         $p2 = new \App\Product;
@@ -32,6 +33,7 @@ class ProductsTableSeeder extends Seeder
         $p2->product_brand = 'Graco';
         $p2->product_price = 7;
         // $p2->rented= false;
+        //$p2->rented_by =  ;
         $p2->save();
 
         $p3 = new \App\Product;
@@ -42,6 +44,7 @@ class ProductsTableSeeder extends Seeder
         $p3->product_brand = 'Evenflo';
         $p3->product_price = 7;
         // $p3->rented= false;
+        //$p3->rented_by =  ;
         $p3->save();
 
         $p4 = new \App\Product;
@@ -52,6 +55,7 @@ class ProductsTableSeeder extends Seeder
         $p4->product_brand = 'Baby Einstein';
         $p4->product_price = 3;
         // $p4->rented= false;
+        //$p4->rented_by =  ;
         $p4->save();
 
         $p5 = new \App\Product;
@@ -62,6 +66,7 @@ class ProductsTableSeeder extends Seeder
         $p5->product_brand = 'Ingenuity';
         $p5->product_price = 10;
         // $p5->rented= false;
+        //$p5->rented_by =  ;
         $p5->save();
 
 

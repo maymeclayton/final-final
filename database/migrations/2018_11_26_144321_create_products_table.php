@@ -23,6 +23,7 @@ class CreateProductsTable extends Migration
             // $table->boolean('rented')->nullable;
             $table->unsignedInteger('product_owner');
             $table->foreign('product_owner')->references('id')->on('users');
+            //rented by;
             $table->timestamps();
         });
     }

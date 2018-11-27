@@ -9,6 +9,14 @@
 @section ('content')
 
   <div class="container mt-5 text-center">
+
+    <div class="card-body">
+      @if (session('status'))
+          <div class="alert alert-success" role="alert">
+              {{ session('status') }}
+          </div>
+      @endif
+      
     <div class="row">
       <div class="col-4 text-left">
         <form>

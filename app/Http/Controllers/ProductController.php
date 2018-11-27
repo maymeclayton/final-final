@@ -11,9 +11,15 @@ class ProductController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $products = \App\Product::get();
+
+        $q = $request->input( 'q' );
+
+        if($q != ""){
+      		$products = \App\Product::where ( 'product_name', 'LIKE', '%' . $q . '%' )->orWhere ( 'product_description', 'LIKE', '%' . $q . '%' )->get ();
+        }
+        else { $products = \App\Product::get(); }
 
         return view ('products.index', compact('products'));
     }
@@ -45,6 +51,8 @@ class ProductController extends Controller
         $p->product_owner=\Auth::id();
         $p->save();
 
+        $request->session()->flash('status', "A new product was added!");
+
         return redirect ('/products');
 
     }
@@ -69,7 +77,9 @@ class ProductController extends Controller
      */
     public function edit($id)
     {
-        //
+        $product = \App\Product::find($id);
+        return view ('products.edit', compact('product'));
+
     }
 
     /**
@@ -81,7 +91,16 @@ class ProductController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+      $p = \App\Product::find($id);
+      $p->product_name=$request->input('product_name');
+      $p->product_image=$request->input('product_image');
+      $p->product_brand=$request->input('product_brand');
+      $p->product_description=$request->input('product_description');
+      $p->product_price=$request->input('product_price');
+      $p->product_owner=\Auth::id();
+      $p->save();
+
+      return redirect('home');
     }
 
     /**
@@ -92,6 +111,12 @@ class ProductController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $p = \App\Product::find($id);
+        $p->delete();
+        $request->session()->flash('status', "Product was deleted!");
+        return redirect('home');
+
+
+
     }
 }

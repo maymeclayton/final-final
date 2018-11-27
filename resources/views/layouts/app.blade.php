@@ -27,7 +27,7 @@
               <a class="nav-link text-info" href="/about">About <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-info" href="/membership/user">Profile</a>
+              <a class="nav-link text-info" href="/profile">Profile</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-info" href="/products">Rent</a>

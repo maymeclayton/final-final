@@ -23,6 +23,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $products = \App\Product::where('product_owner', \Auth::id())->get();
+        return view('home', compact('products'));
     }
 }

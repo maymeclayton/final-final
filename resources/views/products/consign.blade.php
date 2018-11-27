@@ -31,17 +31,7 @@
       <label for="product_image">Product Image URL</label>
       <input type="text" class="form-control" id="product_image" name="product_image" placeholder="https://">
     </div>
-    <div class="row">
-      <div class="col">
         <button type="submit" class="btn btn-primary mt-2">add</button>
-      </div>
-      <div class="col">
-        <div class="form-group">
-          <label for="exampleFormControlFile1">upload photo:</label>
-          <input type="file" class="form-control-file" id="user-photo">
-        </div>
-      </div>
-    </div>
   </form>
 
 @endsection
