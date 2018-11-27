@@ -88,10 +88,9 @@
 
                 <div class="links">
                     <a href="/about">About</a>
-                    <a href="/membership/register">Login/Register</a>
                     <a href="/products">Shop</a>
-                    <a href="#">Hold</a>
-                    <a href="#">Consign</a>
+                    <a href="/products/create">Consign</a>
+                    <a href="/contact">Contact Us</a>
                 </div>
             </div>
         </div>

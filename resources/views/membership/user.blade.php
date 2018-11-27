@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('layouts.app')
 
 <!--Can this be pulled in from the database?  -->
 @section('title')

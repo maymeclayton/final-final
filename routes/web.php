@@ -15,8 +15,16 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::resource('products', 'ProductController')->middleware('auth');
+
+Route::resource('profile', 'ProfileController')->middleware('auth');
+
 Route::get('/about', function(){
     return view('about');
+});
+
+Route::get('/contact', function(){
+    return view('contact');
 });
 
 Route::get('/cart', function(){
@@ -27,12 +35,14 @@ Route::get('/membership/register', function(){
     return view('membership.register');
 });
 
-Route::get('/products', function(){
-    return view('products.index');
-});
+// Route::get('/products', function(){
+//     $products = \App\Product::get();
+//     return view('products.index', compact('products'));
+// });
 
 Route::get('/products/details', function(){
-    return view('products.details');
+    $products = \App\Product::find($id);
+    return view('products.details', compact('products'));
 });
 
 route::get('/products/consign', function(){
@@ -43,3 +53,7 @@ Route::get('membership/user', function(){
   return view('membership.user');
 
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
