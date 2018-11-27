@@ -9,19 +9,15 @@
 
   <h1 class="mt-5">About Us</h5>
 
-  <p class="mt-3"> Waa Waa wawa Gaagaa gaa doo ga gaga. Laa goo gaga da dada. Gaga da laalaa laalaa gaga ga huggle gaagaa laa gaagaa ya. Caca laa da googoo da dada laa y. Goo gaga gaa dada goo gaga gaa doo.
+  <p class="mt-3">Everything but the baby was an idea born (pun very much intended) out of a need for both baby gear and community.
+                  While pregnant and throughout my first year of motherhood I was surprised by 2 things: 1) how quickly babies
+                  outgrow the need for certain items (and how pristine they still seem to be when finished with them) and 2) the
+                  overwhelming and amazing support offered by other parents. I wanted to create a place where parents can offer their
+                  gently used baby gear for an affordable rental price and a community where parents can ask questions, receive support,
+                  and celebrate parenting victories.</p>
 
-   Doo doo yaya goo googoo ga da googoo da. Laa gaagaa gaga poppet wawa da gaagaa doodoo da laa. Gaagaa gaa doo ga gaga. Doo gaagaa dada gaa ickle botty po.
-
-   Gaa dada laa gaa yaya da yaya teensy-wee.</p>
-
-   <p>Caca laa da googoo da dada laa y. Yaya doodoo laalaa laalaa yaya doo goo doo. Laa gaagaa gaga poppet wawa da gaagaa doodoo da laa.
-
-   Goo gaga gaa dada goo gaga gaa doo. Doo gaagaa dada gaa ickle botty po. Gaa doo ya dum-dum gaa. Gaagaa da doo laalaa gaagaa gaa dada huggle gaagaa.
-
-   Laalaa googoo da gaga dada ga goo ga doodoo gaga googoo doodoo ya. Gaagaa laalaa laa yaya yaya gaa doodoo. Gaagaa laalaa laa yaya yaya gaa doodoo.
-
-   </p>
+   <p>I hope that you find this site useful in your parenting journey. If you have questions, concerns or suggestions please send them to me
+      via the "contact us" link at the top of the page. Happy Parenting!</p>
 
    <!-- <div class="jumbotron jumbotron-fluid" style="background-image: url(https://images.pexels.com/photos/422150/pexels-photo-422150.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350); background-size:75%;">
     <div class="container">
