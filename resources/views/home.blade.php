@@ -38,7 +38,7 @@
             <div class="container mt-5">
               <div class="row">
           @foreach ($products as $p)
-                <div class="col-4 mb-5">
+                <div class="col mb-5 ml-2 mr-2">
                   <div class="card projectDescBox h-100" style="width: 18rem;">
                     <div class="card-header">
                       {{ $p->product_name }}

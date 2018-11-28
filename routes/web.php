@@ -17,7 +17,11 @@ Route::get('/', function () {
 
 Route::resource('products', 'ProductController')->middleware('auth');
 
-Route::resource('profile', 'ProfileController')->middleware('auth');
+// Route::resource('profile', 'ProfileController')->middleware('auth');
+
+Route::get('/profile', 'ProfileController@edit')->middleware('auth');
+
+Route::put('/profile', 'ProfileController@update')->middleware('auth');
 
 Route::get('/about', function(){
     return view('about');
@@ -29,10 +33,6 @@ Route::get('/contact', function(){
 
 Route::get('/cart', function(){
     return view('cart');
-});
-
-Route::get('/membership/register', function(){
-    return view('membership.register');
 });
 
 // Route::get('/products', function(){

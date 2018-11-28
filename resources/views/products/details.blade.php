@@ -12,14 +12,17 @@
 
     <div class="card-body">
       @if (session('status'))
-          <div class="alert alert-success" role="alert">
+          <div class="alert alert-ebony text-white" role="alert">
               {{ session('status') }}
           </div>
       @endif
-      
+
     <div class="row">
       <div class="col-4 text-left">
-        <form>
+        <a href="/products" class="btn btn-warning mb-3">Back</a>
+        <form method="post" actions="/products/{{ $product->id }}">
+          @method('DELETE')
+          @csrf
             <!-- description will be pulled from the database -->
             <div class="form-group">
               <label for="exampleFormControlTextarea1">{{ $product->product_name }}</label>
@@ -42,8 +45,14 @@
               <label for="exampleFormControlTextarea1">Price:</label>
               <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" readonly>{{ $product->product_price }}</textarea>
             </div>
-            <button type="submit" class="btn btn-lg btn-primary">Add to cart</button>
-            <a href="/products" class="btn btn-lg btn-danger">Cancel</a>
+            <button type="submit" class="btn btn-primary">Add to cart</button>
+
+@if ( Auth::id() == $product->user->id )
+
+            <button type="submit" class="btn btn-danger ml-2">Delete</button>
+
+@endif
+
           </form>
           </div>
       <div class="col-8">

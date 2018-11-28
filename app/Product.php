@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Product extends Model
 {
   public function user() {
-  return $this->belongsTo('App\User', 'product_owner', 'name');
+  return $this->belongsTo('App\User', 'product_owner');
 }
 
 }

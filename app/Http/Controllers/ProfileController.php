@@ -11,10 +11,13 @@ class ProfileController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
-        return view ('profile.index');
-    }
+    // public function index()
+    // {
+    //     $profile = \App\Profile::get();
+    //
+    //
+    //     return view ('profile.index', compact('profile'));
+    // }
 
     /**
      * Show the form for creating a new resource.
@@ -34,7 +37,23 @@ class ProfileController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $profile = new \App\Profile;
+        $profile->firstName = $request->input('firstName');
+        $profile->lastName = $request->input('lastName');
+        $profile->address = $request->input('address');
+        $profile->street = $request->input('street');
+        $profile->city = $request->input('city');
+        $profile->state = $request->input('state');
+        $profile->zip = $request->input('zip');
+        $profile->email = $request->input('email');
+        $profile->phone = $request->input('phone');
+        $profile->lookingFor = $request->input('lookingFor');
+        $profile->biography = $request->input('biography');
+        $profile->profile_owner = \Auth::id();
+        $profile->save();
+
+        return view('profile.index');
+
     }
 
     /**
@@ -56,7 +75,9 @@ class ProfileController extends Controller
      */
     public function edit($id)
     {
-        //
+        $profile = \App\Profile::find($id);
+
+        return view('profile.edit', compact('profile'));
     }
 
     /**
@@ -68,7 +89,21 @@ class ProfileController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+      $profile = \App\Profile::find($id);
+      $profile->firstName = $request->input('firstName');
+      $profile->lastName = $request->input('lastName');
+      $profile->address = $request->input('address');
+      $profile->city = $request->input('city');
+      $profile->state = $request->input('state');
+      $profile->zip = $request->input('zip');
+      $profile->email = $request->input('email');
+      $profile->phone = $request->input('phone');
+      $profile->lookingFor = $request->input('lookingFor');
+      $profile->biography = $request->input('biography');
+      $profile->profile_owner = \Auth::id();
+      $profile->save();
+
+      return view('profile.index');
     }
 
     /**

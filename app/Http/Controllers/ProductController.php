@@ -109,10 +109,11 @@ class ProductController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Request $request, $id)
     {
         $p = \App\Product::find($id);
         $p->delete();
+
         $request->session()->flash('status', "Product was deleted!");
         return redirect('home');
 

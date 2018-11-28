@@ -10,6 +10,8 @@
 
 <h1 class="container mt-5 mb-3">Stephanie Smith</h1>
 
+@foreach ($profile as $p)
+
 <div class="container">
   <div class="row">
     <div class="col">
@@ -26,19 +28,21 @@
     <div class="col">
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title">About me</h5>
+          <h5 class="card-title">A little bit about me:</h5>
           <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-          <p class="card-text">She's a good girl. Loves her Mama. Loves Jesus and America too. She's a good girl, crazy 'bout Elvis. Loves horses and her boyfriend too. It's a long day,
-            living in Reseda. There's a freeway running through the yard. And I'm a bad boy 'cause I don't even miss her. I'm a bad boy for breaking her heart.</p>
+          <p class="card-text">{{ $profile->biography }}</p>
           <!-- <a href="#" class="card-link">Rent from Me</a>
           <a href="#" class="card-link">Another link</a> -->
         </div>
       </div>
-        <button type="button" class="btn btn-warning mt-3">Update Profile</button>
+        <a href="profile/{{$profile->user->id}}/edit" type="button" class="btn btn-warning mt-3">Update Profile</button>
     </div>
-    
+
   </div>
 
+@endforeach
+
+</div>
 
 
 
