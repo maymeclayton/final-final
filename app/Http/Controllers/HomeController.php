@@ -24,6 +24,8 @@ class HomeController extends Controller
     public function index()
     {
         $products = \App\Product::where('product_owner', \Auth::id())->get();
-        return view('home', compact('products'));
+        $messages = \App\Message::where('recipient', \Auth::id())->get();
+        
+        return view('home', compact('products', 'messages'));
     }
 }

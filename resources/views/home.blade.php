@@ -15,6 +15,24 @@
     <div class="card-header">My Dashboard</div>
       <div class="card-body">
 
+@foreach($messages as $m)
+        <div class="card mb-3">
+          <div class="card-header">
+            My messages:
+          </div>
+          <div class="card-body">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h6 class="card-subtitle mb-2 text-muted">From: {{ $m->user->name}}</h6>
+                <p class="card-text">{{ $m->message_text }} </p>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+@endforeach
+
         <div class="card mb-3">
           <div class="card-header">
             What I've rented:

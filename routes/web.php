@@ -23,6 +23,10 @@ Route::get('/profile', 'ProfileController@edit')->middleware('auth');
 
 Route::put('/profile', 'ProfileController@update')->middleware('auth');
 
+Route::get('/products/messages', 'MessageController@edit')->middleware('auth');
+
+Route::put('/products/messages', 'MessageController@update')->middleware('auth');
+
 Route::get('/about', function(){
     return view('about');
 });

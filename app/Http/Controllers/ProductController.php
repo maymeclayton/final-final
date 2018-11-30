@@ -66,6 +66,7 @@ class ProductController extends Controller
     public function show($id)
     {
         $product = \App\Product::find($id);
+        
         return view ('products.details', compact('product'));
     }
 
@@ -117,7 +118,11 @@ class ProductController extends Controller
         $request->session()->flash('status', "Product was deleted!");
         return redirect('home');
 
+    }
 
+    public function message()
+    {
+      return view('products/messages');
 
     }
 }

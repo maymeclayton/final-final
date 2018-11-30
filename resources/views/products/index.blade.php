@@ -34,7 +34,6 @@ Available products
               <p class="card-text">{{ $p->product_description }}</p>
               <p class="card-text">${{ $p->product_price }} per week</p>
               <h6 class="card-subtitle mb-2 text-muted">product owner: {{ $p->user->name }}</h6>
-              <a href="products/{{ $p->id }}" class="card-link">rent</a>
               <a href="products/{{ $p->id }}" class="card-link">more information</a>
             </div>
         </div>

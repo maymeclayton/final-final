@@ -28,24 +28,11 @@
               <label for="exampleFormControlTextarea1">{{ $product->product_name }}</label>
               <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" readonly>{{ $product->product_description }}</textarea>
             </div>
-            <div>
-              <label for="exampleFormControlTextarea1">Rental period:</label>
-              <input type="text" class="form-control" id="rentalNumber" rows="1" placeholder="enter number here..."></input>
-            </div>
-            <div>
-              <select class="custom-select mr-sm-2 mt-2" id="rentalIncrement">
-                <option selected>Choose timeframe...</option>
-                <option value="1">Week(s)</option>
-                <option value="2">Month(s)</option>
-                <option value="3">Year(s)</option>
-              </select>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Product Owner: {{ $product->user->name }}</label>
             </div>
             <!-- price will be pulled from database -->
-            <div class="form-group mt-2">
-              <label for="exampleFormControlTextarea1">Price:</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" readonly>{{ $product->product_price }}</textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Add to cart</button>
+            <a href="/products/messages"class="btn btn-primary">Contact Owner</a>
 
 @if ( Auth::id() == $product->user->id )
 
