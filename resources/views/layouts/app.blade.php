@@ -40,9 +40,9 @@
             </li>
           </ul>
           <ul class="navbar-nav">
-            <li class="nav-item active">
+            <!-- <li class="nav-item active">
               <a class="nav-link text-info" href="/cart"><i class="fas fa-shopping-cart"></i><span class="sr-only">(current)</span></a>
-            </li>
+            </li> -->
             <ul class="navbar-nav ml-auto">
                 <!-- Authentication Links -->
                 @guest

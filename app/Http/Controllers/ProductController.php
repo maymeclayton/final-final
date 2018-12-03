@@ -19,7 +19,7 @@ class ProductController extends Controller
         if($q != ""){
       		$products = \App\Product::where ( 'product_name', 'LIKE', '%' . $q . '%' )->orWhere ( 'product_description', 'LIKE', '%' . $q . '%' )->get ();
         }
-        else { $products = \App\Product::get(); }
+        else { $products = \App\Product::where('rented', false)->get(); }
 
         return view ('products.index', compact('products'));
     }
@@ -43,11 +43,17 @@ class ProductController extends Controller
     public function store(Request $request)
     {
         $p = new \App\Product;
+
         $p->product_name=$request->input('product_name');
         $p->product_image=$request->input('product_image');
         $p->product_brand=$request->input('product_brand');
         $p->product_description=$request->input('product_description');
         $p->product_price=$request->input('product_price');
+        if ($request->input('rented'))
+          {$p->rented=$request->input('rented');
+          } else {
+          $p->rented=false;
+          };
         $p->product_owner=\Auth::id();
         $p->save();
 
@@ -66,7 +72,7 @@ class ProductController extends Controller
     public function show($id)
     {
         $product = \App\Product::find($id);
-        
+
         return view ('products.details', compact('product'));
     }
 
@@ -98,6 +104,11 @@ class ProductController extends Controller
       $p->product_brand=$request->input('product_brand');
       $p->product_description=$request->input('product_description');
       $p->product_price=$request->input('product_price');
+      if ($request->input('rented'))
+        {$p->rented=$request->input('rented');
+        } else {
+        $p->rented=false;
+        };
       $p->product_owner=\Auth::id();
       $p->save();
 

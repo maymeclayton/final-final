@@ -20,10 +20,11 @@ class CreateProductsTable extends Migration
             $table->text('product_description');
             $table->string('product_brand', 200)->nullable();
             $table->integer('product_price');
-            // $table->boolean('rented')->nullable;
             $table->unsignedInteger('product_owner');
             $table->foreign('product_owner')->references('id')->on('users');
-            //rented by;
+            $table->boolean('rented')->nullable();
+            $table->unsignedInteger('rented_by')->nullable();
+            $table->foreign('rented_by')->references('id')->on('users');
             $table->timestamps();
         });
     }

@@ -31,8 +31,11 @@
             <div class="form-group">
               <label for="exampleFormControlTextarea1">Product Owner: {{ $product->user->name }}</label>
             </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Product number: {{ $product->id }}</label>
+            </div>
             <!-- price will be pulled from database -->
-            <a href="/products/messages"class="btn btn-primary">Contact Owner</a>
+            <a href="/messages/{{$product->id}}"class="btn btn-primary">Contact Owner</a>
 
 @if ( Auth::id() == $product->user->id )
 

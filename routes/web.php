@@ -21,11 +21,11 @@ Route::resource('products', 'ProductController')->middleware('auth');
 
 Route::get('/profile', 'ProfileController@edit')->middleware('auth');
 
-Route::put('/profile', 'ProfileController@update')->middleware('auth');
+Route::post('/profile', 'ProfileController@store')->middleware('auth');
 
-Route::get('/products/messages', 'MessageController@edit')->middleware('auth');
+Route::get('/messages/{product_number}', 'MessageController@edit')->middleware('auth');
 
-Route::put('/products/messages', 'MessageController@update')->middleware('auth');
+Route::post('/messages/{product_number}', 'MessageController@store')->middleware('auth');
 
 Route::get('/about', function(){
     return view('about');

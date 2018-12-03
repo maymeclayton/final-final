@@ -21,8 +21,8 @@ class ProductsTableSeeder extends Seeder
         $p1->product_description = 'Soothe, nap & play in one inclined sleeper with hands-free rocking motion.';
         $p1->product_brand = 'Fisher-Price';
         $p1->product_price = 5;
-        // $p1->rented= false;
-        //$p1->rented_by =  ;
+        $p1->rented= true;
+        $p1->rented_by = $matt->id;
         $p1->save();
 
         $p2 = new \App\Product;
@@ -32,8 +32,8 @@ class ProductsTableSeeder extends Seeder
         $p2->product_description = 'A soothing infant swing seat and a gentle rocker.';
         $p2->product_brand = 'Graco';
         $p2->product_price = 7;
-        // $p2->rented= false;
-        //$p2->rented_by =  ;
+        $p2->rented= false;
+        $p2->rented_by = null;
         $p2->save();
 
         $p3 = new \App\Product;
@@ -43,8 +43,8 @@ class ProductsTableSeeder extends Seeder
         $p3->product_description = 'The Evenflo ExerSaucer Zoo Friends offers parents a safe alternative to walkers. With a variety of age-appropriate toys that help your baby achieve important developmental milestones. With rock, spin and bounce actions that provide your baby with plenty of exercise to strengthen legs, back and neck muscles.';
         $p3->product_brand = 'Evenflo';
         $p3->product_price = 7;
-        // $p3->rented= false;
-        //$p3->rented_by =  ;
+        $p3->rented= true;
+        $p3->rented_by = $matt->id;
         $p3->save();
 
         $p4 = new \App\Product;
@@ -54,8 +54,8 @@ class ProductsTableSeeder extends Seeder
         $p4->product_description = "Baby Einstein's 5-in-1 Journey of Discovery Gym is packed with features that will grow with your baby for years to come with learning-inspired fun. The multi-mode gym has a unique design that features 5 fun ways to play as baby grows: newborn, active discovery, tummy-time, sitting, and crawling.";
         $p4->product_brand = 'Baby Einstein';
         $p4->product_price = 3;
-        // $p4->rented= false;
-        //$p4->rented_by =  ;
+        $p4->rented= true;
+        $p4->rented_by = $mayme->id;
         $p4->save();
 
         $p5 = new \App\Product;
@@ -65,8 +65,8 @@ class ProductsTableSeeder extends Seeder
         $p5->product_description = 'From playtime to naptime, the Smart and Simple Playard is a safe space for everything your baby needs. Rest in the DreamCentre, relax in the playard, and get cleaned up on the changing table.';
         $p5->product_brand = 'Ingenuity';
         $p5->product_price = 10;
-        // $p5->rented= false;
-        //$p5->rented_by =  ;
+        $p5->rented= false;
+        $p5->rented_by = null;
         $p5->save();
 
 

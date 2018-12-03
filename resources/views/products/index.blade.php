@@ -26,7 +26,7 @@ Available products
       <div class="col-4 mb-5">
         <div class="card projectDescBox h-100" style="width: 18rem;">
           <div class="card-header">
-            {{ $p->product_name }}
+            <a href="products/{{ $p->id }}">{{ $p->product_name }}</a>
           </div>
           <img class="card-img" src="{{ $p->product_image }}" alt="{{ $p->product_name }}">
             <div class="card-body">

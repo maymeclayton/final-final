@@ -19,6 +19,7 @@ class CreateMessagesTable extends Migration
             $table->foreign('sender_id')->references('id')->on('users');
             $table->unsignedInteger('recipient');
             $table->foreign('recipient')->references('id')->on('users');
+            $table->integer('product_number')->nullable();
             $table->text('message_text');
             $table->timestamps();
         });

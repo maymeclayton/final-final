@@ -13909,6 +13909,10 @@ var app = new Vue({
   el: '#app'
 });
 
+$('.nav-tabs a').click(function () {
+  $(this).tab('show');
+});
+
 /***/ }),
 /* 13 */
 /***/ (function(module, exports, __webpack_require__) {

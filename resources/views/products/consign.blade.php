@@ -31,7 +31,11 @@
       <label for="product_image">Product Image URL</label>
       <input type="text" class="form-control" id="product_image" name="product_image" placeholder="https://">
     </div>
-        <button type="submit" class="btn btn-primary mt-2">add</button>
+    <div class="custom-control custom-checkbox form-check">
+      <input type="checkbox" class="form-check-input" id="rented" name="rented">
+      <label class="form-check-label" for="rented">This item is currently rented.</label>
+    </div>
+        <button type="submit" class="btn btn-primary mt-4">add</button>
   </form>
 
 @endsection

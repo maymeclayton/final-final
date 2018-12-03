@@ -39,7 +39,7 @@ class ProfilesTableSeeder extends Seeder
       $p2->email = 'matthew.a.clayton@gmail.com';
       $p2->phone = '2703005000';
       $p2->lookingFor = 'baby swing, activity gym, stroller';
-      $p2->biography = 'Mom to a sweet baby boy who loves balls and kicking things.';
+      $p2->biography = 'Dad to a super sweet boy named Henry. I like playing basketball, working on my convertible, cooking, and spending time with my family';
       $p2->save();
 
 
