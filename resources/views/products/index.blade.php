@@ -24,7 +24,7 @@ Available products
     <div class="row">
 @foreach ($products as $p)
       <div class="col-4 mb-5">
-        <div class="card projectDescBox h-100" style="width: 18rem;">
+        <div class="card mb-5 ml-2 mr-2 mt-2 projectDescBox h-100">
           <div class="card-header">
             <a href="products/{{ $p->id }}">{{ $p->product_name }}</a>
           </div>

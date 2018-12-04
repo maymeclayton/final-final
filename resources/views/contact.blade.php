@@ -12,8 +12,7 @@
 </div>
 </div>
 
-  <div class="row">
-  <div class="col-sm-6">
+    <div class="card-deck">
     <div class="card">
       <div class="card-body">
         <h5 class="card-title">Questions</h5>
@@ -21,10 +20,8 @@
         <form action="mailto:mayme.clayton@gmail.com" method:"post" enctype="text/plain">
           <button type="submit" class="btn btn-danger">Contact</button>
         </form>
-      </div>
     </div>
-  </div>
-  <div class="col-sm-6">
+    </div>
     <div class="card">
       <div class="card-body">
         <h5 class="card-title">Suggestions</h5>
@@ -34,8 +31,33 @@
         </form>
       </div>
     </div>
+    </div>
+
+
+  <!-- <div class="row">
+    <div class="col-sm-6">
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5 class="card-title">Questions</h5>
+          <p class="card-text">Let us know if you have questions on how to effectively use this site or anything else you're wondering about!</p>
+          <form action="mailto:mayme.clayton@gmail.com" method:"post" enctype="text/plain">
+            <button type="submit" class="btn btn-danger">Contact</button>
+          </form>
+        </div>
+      </div>
+    </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+          <h5 class="card-title">Suggestions</h5>
+          <p class="card-text">We are always looking for ways to make EBTB better - let us know your ideas!</p>
+          <form action="mailto:mayme.clayton@gmail.com" method:"post" enctype="text/plain">
+            <button type="submit" class="btn btn-danger">Contact</button>
+          </form>
+      </div>
+    </div>
   </div>
-  </div>
+</div> -->
 
 
 
