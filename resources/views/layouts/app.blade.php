@@ -30,10 +30,10 @@
               <a class="nav-link text-info" href="/profile">Profile</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-info" href="/products">Rent</a>
+              <a class="nav-link text-info" href="/products">Rent an item</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-info" href="/products/create">Consign</a>
+              <a class="nav-link text-info" href="/products/create">List an item</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-info" href="/contact">Contact Us</a>

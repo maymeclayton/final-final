@@ -9,13 +9,14 @@ class ProfileController extends Controller
 
     public function edit() {
     if (\Auth::user()->profile) {
-        $profile = \App\Profile::find(\Auth::user()->id);
+        $profile = \Auth::user()->profile;
     }
     else {
         $profile = new \App\Profile;
         $profile->profile_owner = \Auth::id();
         $profile->save();
     }
+
     return view('profile.edit', compact('profile'));
     }
 
@@ -32,7 +33,6 @@ class ProfileController extends Controller
       $profile->phone = $request->input('phone');
       $profile->lookingFor = $request->input('lookingFor');
       $profile->biography = $request->input('biography');
-      $profile->profile_owner = \Auth::id();
       $profile->save();
 
       return view('profile.edit', compact('profile'));

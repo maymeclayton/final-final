@@ -26,7 +26,14 @@
 @foreach($messages as $m)
             <div class="card mt-3 mb-3">
               <div class="card-body">
-                <h6 class="card-subtitle mb-2 text-muted">From: {{ $m->user->name}}</h6>
+                <div class="row">
+                  <div class="col">
+                    <h6 class="card-subtitle mb-2 text-muted">From: {{ $m->user->name }}</h6>
+                  </div>
+                  <div class="col">
+                    <h6 class="card-subtitle mb-2 text-muted text-right">Sent: {{ $m->prettyUpdate() }}</h6>
+                  </div>
+                </div>
                 <p class="card-text">{{ $m->message_text }} </p>
               </div>
             </div>
