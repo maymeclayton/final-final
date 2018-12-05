@@ -20,12 +20,12 @@
         <form action="mailto:mayme.clayton@gmail.com" method:"post" enctype="text/plain">
           <button type="submit" class="btn btn-danger">Contact</button>
         </form>
-    </div>
+      </div>
     </div>
     <div class="card">
       <div class="card-body">
         <h5 class="card-title">Suggestions</h5>
-        <p class="card-text">We are always looking for ways to make EBTB better - let us know your ideas!</p>
+        <p class="card-text">We are always looking for ways to make EBTB better - let us know your ideas and we'll get back to you as soon as we can!</p>
         <form action="mailto:mayme.clayton@gmail.com" method:"post" enctype="text/plain">
           <button type="submit" class="btn btn-danger">Contact</button>
         </form>
